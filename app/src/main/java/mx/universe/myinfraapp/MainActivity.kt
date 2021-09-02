@@ -39,6 +39,8 @@ class MainActivity : AppCompatActivity() {
                             val res = gson.fromJson(parseObject, ResponseInfringements::class.java)
                             Log.d("RESULT", "Folio infracción 1: ${res.responseInfringements?.get(0)?.folio.toString()}")
                             Log.d("RESULT", "Placa infracción 1: ${res.responseInfringements?.get(0)?.numDoc.toString()}")
+                            Log.d("RESULT", "IdInfraction 1 : ${res.responseInfringements?.get(0)?.infringement.toString()}")
+                            Log.d("RESULT", "Fracción 1 : ${res.responseInfringements?.get(0)?.fraction .toString()}")
 
                         } else {
                             Log.d("RESULT", "Sin resultados de búsqueda ${response.message()}")
