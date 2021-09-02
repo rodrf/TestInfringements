@@ -1,5 +1,6 @@
 package mx.universe.myinfraapp
 
+import com.google.gson.JsonArray
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
@@ -38,7 +39,7 @@ open class ApiInfringement {
 
             @Headers ("token:d/vfEi6hDQULP0gtnoiri9HiSk5zP27i2Ryj5eiK7GM=")
             @GET("infringement/get-infringements-to-date/")
-            fun getImplicatedDetail(@QueryMap params: Map<String, String>): Call<ResponseInfringements>
+            fun getImplicatedDetail(@QueryMap params: Map<String, String>): Call<JsonArray>
 
         }
     }

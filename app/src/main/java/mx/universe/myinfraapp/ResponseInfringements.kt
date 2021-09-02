@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 data class ResponseInfringements(
 
 	@field:SerializedName("ResponseInfringements")
-	val responseInfringements: List<ResponseInfringementsItem?>? = null
+	val responseInfringements: MutableList<ResponseInfringementsItem?>? = null
 )
 
 data class ResponseInfringementsItem(
